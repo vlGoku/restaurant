@@ -1,115 +1,73 @@
-h1 {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+}
+header {
+  background-image: url(../dist/img/Pic1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+header h1 {
+  text-align: center;
+  padding: 300px 1500px 500px 100px;
   color: white;
+}
+
+header .ueberschrift {
+  color: white;
+}
+
+nav {
   background-color: black;
+  padding: 20px;
+}
+
+nav li {
+  float: right;
+  list-style-type: none;
+}
+
+nav li a {
+  text-decoration: none;
+  padding-right: 10px;
+  color: white;
 }
 
 footer {
   position: fixed;
-  left: 0;
   bottom: 0;
-  height: 100px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-content: center;
-  border: 2px solid black;
-}
-
-footer.li {
-  display: inline;
-}
-
-footer.li.a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.nav-unten-links {
-  display: grid;
-  grid-column: 1;
-  place-content: start start;
-  font-size: 16pt;
-}
-
-.nav-unten-rechts {
-  display: grid;
-  grid-column: 2;
-  place-content: start end;
-  padding-right: 20px;
-  font-size: 20pt;
-}
-
-.social {
-  padding: 10px;
-}
-
-/* Start Header */
-
-#nav-top {
-  position: fixed;
-  top: 0;
   left: 0;
-  width: 100%;
-  height: 100px;
-  border: 2px solid black;
-}
-
-img {
-  height: 80px;
-  width: auto;
-}
-
-#nav-top-trigger {
-  display: none;
-}
-
-.menu {
-  opacity: 1;
-  pointer-events: auto;
-  transition: opacity 0.5s;
-}
-
-.nav-top-trigger {
-  display: none;
-  float: right;
-  height: 80px;
-}
-
-.menu {
-  margin-top: 15px;
-  padding-right: 20px;
-  position: static;
-  float: right;
-  display: block;
-  opacity: 1;
-  line-height: 60px;
-  background-color: transparent;
-  overflow: visible;
-  pointer-events: auto;
-}
-
-li {
-  float: left;
-  border-bottom: none;
-  height: 60px;
-  position: relative;
-  padding-left: 10px;
-}
-
-a {
-  padding: 0;
-  background-color: white;
-}
-
-&:hover {
+  right: 0;
   background-color: black;
+  padding: 20px;
+}
+
+footer .listLeft {
+  float: left;
+}
+
+.listLeft li {
+  display: inline;
+  list-style-type: none;
+}
+
+.listLeft li a {
+  text-decoration: none;
   color: white;
 }
 
-.clearfix {
-  clear: both;
+footer .listRight {
+  float: right;
+}
+
+.social {
+  color: white;
+  padding: 10px;
 }
