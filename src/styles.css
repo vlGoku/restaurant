@@ -4,9 +4,10 @@
   padding: 0;
 }
 
-.container {
+#content {
   height: 100vh;
 }
+
 header {
   background-image: url(../dist/img/Pic1.jpg);
   background-position: center center;
