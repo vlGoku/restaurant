@@ -1,10 +1,18 @@
 import "./styles.css";
 import { createTags, expandHtml } from "./modules/functions";
 
-const header = createTags("header");
+const content = document.querySelector("#content");
+console.log(document.body.childNodes[1]);
+const erste = createTags(["div"]);
+const zweite = createTags(["h1"]);
 
-expandHtml(document.body.firstChild, header);
+expandHtml(content, erste);
+expandHtml(content.firstChild, zweite);
 
-const imgUrl = /*process.env.PUBLIC_URL +*/ "/dist/img/Pic1.jpg";
-const imgElement = document.createElement("img");
-imgElement.src = imgUrl;
+erste.id = "hallo";
+
+/* "/dist/img/Pic1.jpg"; */
+
+/*const imgUrl = /*process.env.PUBLIC_URL +*/
+/* const imgElement = document.createElement("img");
+imgElement.src = imgUrl; */
